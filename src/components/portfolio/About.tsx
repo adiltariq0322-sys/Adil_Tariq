@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Brain, Bot, GraduationCap, BookOpen } from "lucide-react";
 import portrait from "@/assets/adil-tariq-portrait.png.asset.json";
 
-const portraitSrc = new URL(portrait.url, "https://adil-tariq-ai.lovable.app").toString();
+const portraitSrc = new URL(portrait.url, "https://adil-tariq-ai.vercel.app").toString();
 
 const highlights = [
   { icon: Brain, label: "AI Internships", value: "2" },

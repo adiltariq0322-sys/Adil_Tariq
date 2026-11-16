@@ -7,7 +7,7 @@ import portrait from "@/assets/adil-tariq-portrait.png.asset.json";
 
 
 const titles = ["RAG Systems", "Agentic AI with LangGraph", "LangChain Pipelines", "Python · FastAPI · Gradio"];
-const portraitSrc = new URL(portrait.url, "https://adil-tariq-ai.lovable.app").toString();
+const portraitSrc = new URL(portrait.url, "https://adil-tariq-ai.vercel.app").toString();
 
 const Hero = memo(() => {
   const [displayText, setDisplayText] = useState("");

@@ -74,5 +74,5 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
-Sitemap: https://adil-tariq-ai.lovable.app/sitemap.xml
-Host: https://adil-tariq-ai.lovable.app
+Sitemap: https://adil-tariq-ai.vercel.app/sitemap.xml
+Host: https://adil-tariq-ai.vercel.app
