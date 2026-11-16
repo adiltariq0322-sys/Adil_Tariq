@@ -3,12 +3,12 @@ import { memo } from "react";
 
 const faqs = [
   {
-    q: "Who is Adil Tariq?",
-    a: "Adil Tariq is a freelance Generative AI Engineer and founder of Innovex Solutions, specializing in RAG chatbots, LLM agents, n8n workflow automation, and Python development for clients worldwide.",
+    q: "Who is Hafiz Adil?",
+    a: "Hafiz Adil is a freelance Generative AI Engineer and founder of Innovex Solutions, specializing in RAG chatbots, LLM agents, n8n workflow automation, and Python development for clients worldwide.",
   },
   {
-    q: "What services does Adil Tariq offer?",
-    a: "Adil offers RAG chatbot development, LLM agent engineering, n8n workflow automation, custom Python AI applications, and AI integration consulting for businesses of all sizes.",
+    q: "What services does Hafiz Adil offer?",
+    a: "Hafiz Adil offers RAG chatbot development, LLM agent engineering, n8n workflow automation, custom Python AI applications, and AI integration consulting for businesses of all sizes.",
   },
   {
     q: "What is a RAG chatbot and how can it help my business?",
@@ -19,7 +19,7 @@ const faqs = [
     a: "AI automation removes repetitive manual work — lead capture, data entry, email replies, content generation, reporting — letting your team focus on growth. Typical clients save 10–40 hours per week.",
   },
   {
-    q: "How do I hire Adil Tariq for an AI project?",
+    q: "How do I hire Hafiz Adil for an AI project?",
     a: "Use the contact form on the website, message on WhatsApp, or connect on LinkedIn. You'll get a free 15-minute consultation and a custom quote within 24 hours.",
   },
   {
@@ -40,7 +40,7 @@ const FAQ = memo(() => (
       >
         <p className="text-xs sm:text-sm tracking-[0.3em] uppercase text-secondary mb-3 font-body">FAQ</p>
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">Frequently Asked Questions</h2>
-        <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-2">Answers about Adil Tariq, his AI engineering services, and how to hire him for your project.</p>
+        <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-2">Answers about Hafiz Adil, his AI engineering services, and how to hire him for your project.</p>
       </motion.div>
 
       <div className="grid md:grid-cols-2 gap-4 sm:gap-6">

@@ -11,7 +11,7 @@ const Footer = memo(() => (
         viewport={{ once: true }}
         className="font-heading font-bold text-lg neon-text"
       >
-        Adil Tariq
+        Hafiz Adil
       </motion.p>
 
       <div className="flex items-center gap-3 sm:gap-4">
@@ -34,7 +34,7 @@ const Footer = memo(() => (
       </div>
 
       <p className="text-[10px] sm:text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Adil Tariq. All rights reserved.
+        © {new Date().getFullYear()} Hafiz Adil. All rights reserved.
       </p>
     </div>
   </footer>

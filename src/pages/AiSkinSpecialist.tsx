@@ -30,7 +30,7 @@ const AiSkinSpecialist = () => {
   const consultRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    document.title = "AI Skin Specialist — Voice, Image & Video Skin Consultation | Adil Tariq";
+    document.title = "AI Skin Specialist — Voice, Image & Video Skin Consultation | Hafiz Adil";
     const desc = document.querySelector('meta[name="description"]');
     const content =
       "AI-powered skin consultation assistant. Upload an image, record voice, or submit video for skin condition analysis with confidence scores and recommendations.";

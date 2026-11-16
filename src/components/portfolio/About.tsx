@@ -49,14 +49,14 @@ const About = memo(() => (
           <div className="relative glass-card overflow-hidden hover-lift">
             <img
               src={portraitSrc}
-              alt="Portrait of Adil Tariq, AI Engineer"
+              alt="Portrait of Hafiz Adil, AI Engineer"
               width={640}
               height={800}
               loading="lazy"
               className="w-full aspect-[4/5] object-cover object-top"
             />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background via-background/70 to-transparent p-4">
-              <p className="font-heading font-semibold text-foreground text-sm sm:text-base">Adil Tariq</p>
+              <p className="font-heading font-semibold text-foreground text-sm sm:text-base">Hafiz Adil</p>
               <p className="text-xs text-neon-emerald">AI Engineer · RAG &amp; Agentic AI</p>
             </div>
           </div>
@@ -70,7 +70,7 @@ const About = memo(() => (
           className="text-muted-foreground text-sm sm:text-base md:text-lg leading-relaxed space-y-4"
         >
           <p>
-            I'm <span className="text-foreground font-semibold">Adil Tariq</span>, an AI Engineer with two years of hands-on experience building
+            I'm <span className="text-foreground font-semibold">Hafiz Adil</span>, an AI Engineer with two years of hands-on experience building
             practical applications with Python, RAG, LangChain, LangGraph and modern AI APIs.
           </p>
           <p>

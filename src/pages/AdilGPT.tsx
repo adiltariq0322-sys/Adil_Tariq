@@ -240,7 +240,7 @@ const methodBadge = (m: string) => {
 
 const AdilGPT = () => {
   useEffect(() => {
-    document.title = "AdilGPT — Production-Ready AI Assistant | Adil Tariq";
+    document.title = "AdilGPT — Production-Ready AI Assistant | Hafiz Adil";
     const setMeta = (name: string, content: string) => {
       let el = document.querySelector(`meta[name="${name}"]`);
       if (!el) {

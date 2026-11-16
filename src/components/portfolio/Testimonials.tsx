@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
 
 const testimonials = [
-  { name: "Sarah Mitchell", role: "CEO, DataFlow Inc.", text: "Adil built an AI chatbot that transformed our customer support. Response accuracy went up 85% and our team now focuses on high-value tasks." },
-  { name: "Ahmed Khan", role: "Founder, AutoScale", text: "The WhatsApp automation system Adil created saves us 30+ hours per week. His n8n expertise is unmatched. Highly recommended!" },
-  { name: "Emily Chen", role: "Marketing Director, TechVibe", text: "From SEO optimization to AI-driven analytics, Adil delivered results that exceeded our expectations. Our organic traffic tripled in 4 months." },
+  { name: "Sarah Mitchell", role: "CEO, DataFlow Inc.", text: "Hafiz Adil built an AI chatbot that transformed our customer support. Response accuracy went up 85% and our team now focuses on high-value tasks." },
+  { name: "Ahmed Khan", role: "Founder, AutoScale", text: "The WhatsApp automation system Hafiz Adil created saves us 30+ hours per week. His n8n expertise is unmatched. Highly recommended!" },
+  { name: "Emily Chen", role: "Marketing Director, TechVibe", text: "From SEO optimization to AI-driven analytics, Hafiz Adil delivered results that exceeded our expectations. Our organic traffic tripled in 4 months." },
 ];
 
 const Testimonials = memo(() => (

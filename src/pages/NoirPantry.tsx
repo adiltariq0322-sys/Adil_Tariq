@@ -287,11 +287,11 @@ const stack = [
 
 const NoirPantry = () => {
   useEffect(() => {
-    document.title = "Noir Pantry AI Shopping Agent — Case Study | Adil Tariq";
+    document.title = "Noir Pantry AI Shopping Agent — Case Study | Hafiz Adil";
     const meta = document.querySelector('meta[name="description"]');
     meta?.setAttribute(
       "content",
-      "Engineering case study: Noir Pantry, an AI shopping agent built with LangChain, Mistral AI (text + vision), SQLite and Streamlit by Adil Tariq.",
+      "Engineering case study: Noir Pantry, an AI shopping agent built with LangChain, Mistral AI (text + vision), SQLite and Streamlit by Hafiz Adil.",
     );
     window.scrollTo(0, 0);
   }, []);

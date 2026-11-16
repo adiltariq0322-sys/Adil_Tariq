@@ -47,7 +47,7 @@ const TiltCard = ({ icon: Icon, title, desc, index }: ServiceCardProps) => {
       <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed mb-4">{desc}</p>
       <a
         href="#contact"
-        aria-label={`Discuss ${title} project with Adil Tariq`}
+        aria-label={`Discuss ${title} project with Hafiz Adil`}
         className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-body text-primary hover:text-secondary transition-colors"
       >
         Discuss this service <ArrowRight className="w-3.5 h-3.5" />

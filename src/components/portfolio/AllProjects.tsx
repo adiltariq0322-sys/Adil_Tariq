@@ -63,7 +63,7 @@ const AllProjects = memo(() => {
           className="text-left mb-10 sm:mb-14 max-w-3xl"
         >
           <p className="text-xs sm:text-sm tracking-[0.2em] uppercase text-secondary mb-3 font-body">
-            Adil Tariq · Selected Work
+            Hafiz Adil · Selected Work
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-medium text-foreground">
             Projects, built with purpose.

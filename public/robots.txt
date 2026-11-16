@@ -1,4 +1,4 @@
-# robots.txt — Adil Tariq Portfolio
+# robots.txt — Hafiz Adil Portfolio
 # Allows all major search and AI engines for maximum visibility (SEO + AEO).
 
 User-agent: *

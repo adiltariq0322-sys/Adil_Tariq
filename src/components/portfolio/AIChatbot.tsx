@@ -122,7 +122,7 @@ async function streamChat({
   }
 }
 
-const WELCOME = "Hello! I'm **Adil Tariq's AI Assistant**. I help with **Generative AI, RAG systems, intelligent automation, and Python solutions**.\n\nHow can I assist you today?";
+const WELCOME = "Hello! I'm **Hafiz Adil's AI Assistant**. I help with **Generative AI, RAG systems, intelligent automation, and Python solutions**.\n\nHow can I assist you today?";
 
 const AIChatbot = memo(() => {
   const [open, setOpen] = useState(false);
@@ -232,7 +232,7 @@ const AIChatbot = memo(() => {
                     <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-secondary rounded-full border-2 border-card" />
                   </div>
                   <div className="leading-tight">
-                    <div className="text-[15px] font-bold text-foreground">Adil Tariq — AI Assistant</div>
+                    <div className="text-[15px] font-bold text-foreground">Hafiz Adil — AI Assistant</div>
                     <div className="text-[11px] text-muted-foreground flex items-center gap-1.5 mt-0.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
                       AI Assistant · {isStreaming ? "Typing…" : "Online"}

@@ -41,7 +41,7 @@ const Navbar = memo(() => {
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
         <a href="#" className="font-heading font-bold text-lg sm:text-xl text-foreground tracking-normal">
-          Adil <span className="text-secondary">Tariq</span>
+          Hafiz <span className="text-secondary">Adil</span>
         </a>
 
         <div className="hidden md:flex items-center gap-6 lg:gap-8">

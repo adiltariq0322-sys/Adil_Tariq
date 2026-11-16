@@ -77,7 +77,7 @@ export function SkinShell({ children }: { children: ReactNode }) {
             professional medical advice, diagnosis, or treatment. Always consult a qualified
             healthcare provider.
           </p>
-          <p>© {new Date().getFullYear()} Adil Tariq · AI Skin Specialist</p>
+          <p>© {new Date().getFullYear()} Hafiz Adil · AI Skin Specialist</p>
         </div>
       </footer>
     </div>

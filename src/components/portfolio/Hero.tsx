@@ -63,7 +63,7 @@ const Hero = memo(() => {
             >
               <span className="h-px w-8 bg-secondary" />
               <p className="text-xs sm:text-sm font-heading font-semibold uppercase text-secondary">
-                Adil Tariq · AI Engineer
+                Hafiz Adil · AI Engineer
               </p>
             </motion.div>
 
@@ -146,7 +146,7 @@ const Hero = memo(() => {
             <div className="relative aspect-[4/5] overflow-hidden border border-border bg-card shadow-elegant">
               <img
                 src={portraitSrc}
-                alt="Adil Tariq — AI Engineer specialising in RAG and Agentic AI systems"
+                alt="Hafiz Adil — AI Engineer specialising in RAG and Agentic AI systems"
                 width={800}
                 height={1000}
                 loading="eager"

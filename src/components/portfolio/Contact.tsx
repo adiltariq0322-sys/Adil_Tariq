@@ -52,7 +52,7 @@ const Contact = memo(() => {
         throw new Error(error?.message || (data as any)?.error || "Failed to send");
       }
 
-      toast({ title: "✅ Thank you! I'll reply within 24 hours.", description: "Your message is on its way to Adil." });
+      toast({ title: "✅ Thank you! I'll reply within 24 hours.", description: "Your message is on its way to Hafiz Adil." });
       setFormData({ name: "", email: "", subject: "", message: "" });
       setFocused(null);
       setSent(true);
@@ -149,7 +149,7 @@ const Contact = memo(() => {
                 <CheckCircle2 className="w-5 h-5 text-neon-emerald shrink-0 mt-0.5" />
                 <div>
                   <p className="text-sm font-medium text-foreground">Thank you! I'll reply within 24 hours.</p>
-                  <p className="text-xs text-muted-foreground">Your message has been delivered to Adil.</p>
+                  <p className="text-xs text-muted-foreground">Your message has been delivered to Hafiz Adil.</p>
                 </div>
               </div>
             )}
