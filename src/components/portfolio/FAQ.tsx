@@ -26,6 +26,18 @@ const faqs = [
     q: "Which languages does the website support?",
     a: "The website auto-detects your language and supports English, Urdu, Arabic, Hindi, Spanish, French, German, Chinese, Portuguese, and Russian — with a manual language switcher in the navigation.",
   },
+  {
+    q: "Does Hafiz Adil work with clients outside Pakistan?",
+    a: "Yes. He is based in Lahore, Pakistan, and works with clients in Dubai and worldwide, fully remote across time zones.",
+  },
+  {
+    q: "Can Hafiz Adil build an AI voice agent or WhatsApp chatbot for my business?",
+    a: "Yes. AI voice agents and chatbots are core services: voice assistants answer calls, handle common questions and qualify leads, and chatbots work across your website and WhatsApp, 24/7.",
+  },
+  {
+    q: "What technologies does Hafiz Adil use?",
+    a: "Python, LangChain, LangGraph, FastAPI, MCP, Groq and Qdrant, among others — the stack behind his RAG chatbots, AI agents and automation.",
+  },
 ];
 
 const FAQ = memo(() => (

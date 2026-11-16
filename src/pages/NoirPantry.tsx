@@ -293,6 +293,14 @@ const NoirPantry = () => {
       "content",
       "Engineering case study: Noir Pantry, an AI shopping agent built with LangChain, Mistral AI (text + vision), SQLite and Streamlit by Hafiz Adil.",
     );
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute("href", "https://adil-tariq-ai.vercel.app/noir-pantry");
+    else {
+      const link = document.createElement("link");
+      link.setAttribute("rel", "canonical");
+      link.setAttribute("href", "https://adil-tariq-ai.vercel.app/noir-pantry");
+      document.head.appendChild(link);
+    }
     window.scrollTo(0, 0);
   }, []);
 

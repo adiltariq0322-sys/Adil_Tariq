@@ -254,6 +254,14 @@ const AdilGPT = () => {
       "description",
       "AdilGPT — production-ready AI assistant built with FastAPI, LangGraph, LangChain, Gemini, Groq, Mistral AI, RAG, JWT auth, long-term memory and streaming responses."
     );
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute("href", "https://adil-tariq-ai.vercel.app/adilgpt");
+    else {
+      const link = document.createElement("link");
+      link.setAttribute("rel", "canonical");
+      link.setAttribute("href", "https://adil-tariq-ai.vercel.app/adilgpt");
+      document.head.appendChild(link);
+    }
   }, []);
 
   const copyRepo = async () => {

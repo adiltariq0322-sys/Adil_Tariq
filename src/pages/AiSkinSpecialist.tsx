@@ -41,6 +41,14 @@ const AiSkinSpecialist = () => {
       m.content = content;
       document.head.appendChild(m);
     }
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute("href", "https://adil-tariq-ai.vercel.app/ai-skin-specialist");
+    else {
+      const link = document.createElement("link");
+      link.setAttribute("rel", "canonical");
+      link.setAttribute("href", "https://adil-tariq-ai.vercel.app/ai-skin-specialist");
+      document.head.appendChild(link);
+    }
   }, []);
 
   const scrollToConsult = () => consultRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
