@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Github } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Button } from "@/components/ui/button";
-import portrait from "@/assets/adil-tariq-portrait.png";
+import portrait from "@/assets/adil-tariq-portrait.webp";
 
 
 const titles = ["RAG Systems", "Agentic AI with LangGraph", "LangChain Pipelines", "Python · FastAPI · Gradio"];

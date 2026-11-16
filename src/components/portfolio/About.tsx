@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { motion } from "framer-motion";
 import { Brain, Bot, GraduationCap, BookOpen } from "lucide-react";
-import portrait from "@/assets/adil-tariq-portrait.png";
+import portrait from "@/assets/adil-tariq-portrait.webp";
 
 const highlights = [
   { icon: Brain, label: "AI Internships", value: "2" },

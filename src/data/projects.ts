@@ -28,10 +28,10 @@ import workflowImg from "@/assets/project-workflow.jpg";
 import heartImg from "@/assets/project-heart.jpg";
 import cancerImg from "@/assets/project-cancer.jpg";
 import wineImg from "@/assets/project-wine.jpg";
-import azeemInstituteImg from "@/assets/azeem-institute-website.png";
-import niceBroastImg from "@/assets/nice-broast-website.png";
-import aurelleRestaurantImg from "@/assets/aurelle-restaurant-website.png";
-import marbrookEstatesImg from "@/assets/marbrook-estates-website.png";
+import azeemInstituteImg from "@/assets/azeem-institute-website.webp";
+import niceBroastImg from "@/assets/nice-broast-website.webp";
+import aurelleRestaurantImg from "@/assets/aurelle-restaurant-website.webp";
+import marbrookEstatesImg from "@/assets/marbrook-estates-website.webp";
 
 /**
  * Project categories — single source of truth used by both the data

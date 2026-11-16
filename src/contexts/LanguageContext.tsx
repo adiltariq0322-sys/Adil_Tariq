@@ -100,10 +100,12 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     setLangState(initial);
   }, []);
 
-  // Apply <html lang> and dir
+  // Apply <html lang> and dir. When the translation backend is unconfigured,
+  // never flip to RTL: English text in an RTL layout renders garbled
+  // (punctuation jumps, numbers reorder), so keep the normal layout.
   useEffect(() => {
     document.documentElement.lang = lang;
-    document.documentElement.dir = RTL_LANGS.includes(lang) ? "rtl" : "ltr";
+    document.documentElement.dir = TRANSLATE_URL && RTL_LANGS.includes(lang) ? "rtl" : "ltr";
   }, [lang]);
 
   const shouldSkipNode = (node: Text): boolean => {

@@ -7,6 +7,7 @@ type Msg = { role: "user" | "assistant"; content: string };
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL as string | undefined;
 const CHAT_URL = SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/chat` : "";
+const chatAvailable = Boolean(CHAT_URL);
 
 const quickReplies = [
   { label: "💼 What services do you offer?", message: "What services do you offer?" },
@@ -239,8 +240,8 @@ const AIChatbot = memo(() => {
                   <div className="leading-tight">
                     <div className="text-[15px] font-bold text-foreground">Hafiz Adil — AI Assistant</div>
                     <div className="text-[11px] text-muted-foreground flex items-center gap-1.5 mt-0.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
-                      AI Assistant · {isStreaming ? "Typing…" : "Online"}
+                      <span className={`w-1.5 h-1.5 rounded-full ${chatAvailable ? "bg-secondary" : "bg-muted-foreground"}`} />
+                      AI Assistant · {isStreaming ? "Typing…" : chatAvailable ? "Online" : "Offline"}
                     </div>
                   </div>
                 </div>
@@ -303,7 +304,7 @@ const AIChatbot = memo(() => {
             {/* Quick replies */}
             {!isStreaming && (
               <div className="px-4 pb-2 shrink-0">
-                <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none">
+                <div className="flex flex-wrap gap-2">
                   {quickReplies.map((qr) => (
                     <button
                       key={qr.label}
