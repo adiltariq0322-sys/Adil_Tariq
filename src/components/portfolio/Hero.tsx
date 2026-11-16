@@ -3,11 +3,10 @@ import { motion } from "framer-motion";
 import { ArrowRight, Github } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Button } from "@/components/ui/button";
-import portrait from "@/assets/adil-tariq-portrait.png.asset.json";
+import portrait from "@/assets/adil-tariq-portrait.png";
 
 
 const titles = ["RAG Systems", "Agentic AI with LangGraph", "LangChain Pipelines", "Python · FastAPI · Gradio"];
-const portraitSrc = new URL(portrait.url, "https://adil-tariq-ai.vercel.app").toString();
 
 const Hero = memo(() => {
   const [displayText, setDisplayText] = useState("");
@@ -145,7 +144,7 @@ const Hero = memo(() => {
             <div className="absolute -bottom-3 -right-3 w-12 h-12 border-b border-r border-secondary/60" />
             <div className="relative aspect-[4/5] overflow-hidden border border-border bg-card shadow-elegant">
               <img
-                src={portraitSrc}
+                src={portrait}
                 alt="Hafiz Adil — AI Engineer specialising in RAG and Agentic AI systems"
                 width={800}
                 height={1000}

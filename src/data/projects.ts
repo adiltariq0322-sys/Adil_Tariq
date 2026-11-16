@@ -15,23 +15,23 @@ import {
 } from "lucide-react";
 
 import supportAgentImg from "@/assets/project-support-agent.jpg";
-import supportAgentVideo from "@/assets/customer-support-agent-demo.webm.asset.json";
+import supportAgentVideo from "@/assets/customer-support-agent-demo.webm";
 import collegeAssistantImg from "@/assets/project-college-assistant.jpg";
 import skinSpecialistImg from "@/assets/skin-specialist-hero.jpg";
 import adilgptImg from "@/assets/adilgpt-hero.jpg";
 import noirPantryImg from "@/assets/project-noir-pantry.jpg";
 import realEstateImg from "@/assets/project-real-estate.jpg";
-import realEstateVideo from "@/assets/real-estate-agent-demo.webm.asset.json";
+import realEstateVideo from "@/assets/real-estate-agent-demo.webm";
 
 import bankImg from "@/assets/project-bank.jpg";
 import workflowImg from "@/assets/project-workflow.jpg";
 import heartImg from "@/assets/project-heart.jpg";
 import cancerImg from "@/assets/project-cancer.jpg";
 import wineImg from "@/assets/project-wine.jpg";
-import azeemInstituteImg from "@/assets/azeem-institute-website.png.asset.json";
-import niceBroastImg from "@/assets/nice-broast-website.png.asset.json";
-import aurelleRestaurantImg from "@/assets/aurelle-restaurant-website.png.asset.json";
-import marbrookEstatesImg from "@/assets/marbrook-estates-website.png.asset.json";
+import azeemInstituteImg from "@/assets/azeem-institute-website.png";
+import niceBroastImg from "@/assets/nice-broast-website.png";
+import aurelleRestaurantImg from "@/assets/aurelle-restaurant-website.png";
+import marbrookEstatesImg from "@/assets/marbrook-estates-website.png";
 
 /**
  * Project categories — single source of truth used by both the data
@@ -128,7 +128,7 @@ export const projects: Project[] = [
     ],
     keywords: ["nice fast food", "broast", "restaurant", "lahore", "menu", "whatsapp ordering", "web design"],
     icon: Globe,
-    image: niceBroastImg.url,
+    image: niceBroastImg,
     imageAlt: "NICE Fast Food and Broast restaurant website homepage",
     badge: "Web Development · Restaurant",
     accent: "gold",
@@ -164,7 +164,7 @@ export const projects: Project[] = [
     ],
     keywords: ["aurelle", "restaurant", "dining", "wine bar", "london", "reservations", "digital concierge"],
     icon: Globe,
-    image: aurelleRestaurantImg.url,
+    image: aurelleRestaurantImg,
     imageAlt: "Aurelle restaurant website with a candle-lit dining room and reservation button",
     badge: "Web Development · Hospitality",
     accent: "gold",
@@ -200,7 +200,7 @@ export const projects: Project[] = [
     ],
     keywords: ["marbrook estates", "real estate", "property finder", "neighborhood", "home search", "3d tour"],
     icon: Building2,
-    image: marbrookEstatesImg.url,
+    image: marbrookEstatesImg,
     imageAlt: "Marbrook Estates property discovery website showing a miniature neighborhood scene",
     badge: "Web Development · Real Estate",
     accent: "teal",
@@ -236,7 +236,7 @@ export const projects: Project[] = [
     ],
     keywords: ["website development", "education", "academy", "school", "college", "admissions", "lahore"],
     icon: Globe,
-    image: azeemInstituteImg.url,
+    image: azeemInstituteImg,
     imageAlt: "Azeem Inspiration Institute website homepage with institute introduction and program links",
     badge: "Web Development · Education",
     accent: "teal",
@@ -314,7 +314,7 @@ export const projects: Project[] = [
     accent: "emerald",
     gradient: "from-neon-emerald/25 via-neon-teal/15 to-transparent",
     github: "https://github.com/adiltariq234/real-estate-ai-agent",
-    demoVideo: realEstateVideo.url,
+    demoVideo: realEstateVideo,
     featured: true,
     priority: 105,
   },
@@ -459,7 +459,7 @@ export const projects: Project[] = [
       "https://github.com/adiltariq234/intelligent-workflow-hub/tree/main/python/Customers_support_agent",
     liveDemo:
       "https://drive.google.com/file/d/1Gg5xsNbOuwAnBXoh1Jk-NIdHAZQkFusY/view?usp=drive_link",
-    demoVideo: supportAgentVideo.url,
+    demoVideo: supportAgentVideo,
     featured: true,
     priority: 100,
   },

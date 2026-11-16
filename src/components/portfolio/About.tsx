@@ -1,9 +1,7 @@
 import { memo } from "react";
 import { motion } from "framer-motion";
 import { Brain, Bot, GraduationCap, BookOpen } from "lucide-react";
-import portrait from "@/assets/adil-tariq-portrait.png.asset.json";
-
-const portraitSrc = new URL(portrait.url, "https://adil-tariq-ai.vercel.app").toString();
+import portrait from "@/assets/adil-tariq-portrait.png";
 
 const highlights = [
   { icon: Brain, label: "AI Internships", value: "2" },
@@ -48,7 +46,7 @@ const About = memo(() => (
           <div className="absolute -inset-3 rounded-lg bg-secondary/5 blur-xl" />
           <div className="relative glass-card overflow-hidden hover-lift">
             <img
-              src={portraitSrc}
+              src={portrait}
               alt="Portrait of Hafiz Adil, AI Engineer"
               width={640}
               height={800}
