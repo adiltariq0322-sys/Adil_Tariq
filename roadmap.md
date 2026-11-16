@@ -1,0 +1,5 @@
+- [x] Reviewed azeeminspirationinstitute.com and added it as a featured portfolio project with its website screenshot and live link.
+- [x] Add AI marketing and paid advertising platforms to the Services section. (Done — "AI Marketing & Paid Ads" in Services.tsx, verified 2026-11-16.)
+- [x] Add the three new live sites shared by Adil to the portfolio Projects section with accurate descriptions and links. (Done — NICE Fast Food & Broast, Aurelle Restaurant, Marbrook Estates in src/data/projects.ts, verified 2026-11-16.)
+- [x] Update the professional portfolio headline to reflect Adil's stated two years of AI experience. (Done — Hero + About say "2 years", verified 2026-11-16.)
+- [x] SEO pass 2026-11-16: expanded keywords meta (voice agents, WhatsApp AI, LangChain/LangGraph, AI marketing/paid ads, Lahore/Dubai), updated meta/OG/Twitter descriptions, added Voice Agent / WhatsApp Receptionist / AI Marketing offers to ProfessionalService JSON-LD, sitemap lastmod updated to 2026-11-16 and /adilgpt, /ai-skin-specialist, /noir-pantry pages added.
