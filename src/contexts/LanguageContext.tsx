@@ -18,7 +18,8 @@ export const LANGUAGES: { code: LangCode; label: string; native: string; flag: s
 const RTL_LANGS: LangCode[] = ["ur", "ar"];
 const STORAGE_KEY = "site_lang";
 const CACHE_PREFIX = "trcache_v1_";
-const TRANSLATE_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/translate`;
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL as string | undefined;
+const TRANSLATE_URL = SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/translate` : "";
 
 // Skip tags whose text shouldn't be touched
 const SKIP_TAGS = new Set(["SCRIPT", "STYLE", "NOSCRIPT", "CODE", "PRE", "TEXTAREA", "INPUT"]);
@@ -135,6 +136,9 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const translateBatch = useCallback(async (texts: string[], target: LangCode): Promise<string[]> => {
+    // No backend configured (e.g. a deploy without env vars): keep the
+    // original text instead of calling a broken URL.
+    if (!TRANSLATE_URL) return texts;
     const resp = await fetch(TRANSLATE_URL, {
       method: "POST",
       headers: {

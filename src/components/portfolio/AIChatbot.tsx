@@ -5,7 +5,8 @@ import { Bot, Send, Minimize2 } from "lucide-react";
 
 type Msg = { role: "user" | "assistant"; content: string };
 
-const CHAT_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/chat`;
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL as string | undefined;
+const CHAT_URL = SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/chat` : "";
 
 const quickReplies = [
   { label: "💼 What services do you offer?", message: "What services do you offer?" },
@@ -44,6 +45,10 @@ async function streamChat({
   onError: (err: string) => void;
 }) {
   try {
+    if (!CHAT_URL) {
+      onError("Chat is unavailable right now. Please email or WhatsApp me instead.");
+      return;
+    }
     const resp = await fetch(CHAT_URL, {
       method: "POST",
       headers: {

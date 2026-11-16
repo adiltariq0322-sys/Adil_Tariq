@@ -39,6 +39,14 @@ const Contact = memo(() => {
 
     setIsSubmitting(true);
     try {
+      if (!supabase) {
+        toast({
+          title: "Couldn't send message",
+          description: "The contact service isn't set up on this site yet. Please reach out on WhatsApp.",
+          variant: "destructive",
+        });
+        return;
+      }
       const { data, error } = await supabase.functions.invoke("send-contact-email", {
         body: {
           name: formData.name.trim(),

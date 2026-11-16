@@ -6,13 +6,16 @@ import { brokeredPreviewStorage } from './previewAuthStorage';
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
 const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
 
-// Import the supabase client like this:
-// import { supabase } from "@/integrations/supabase/client";
-
-export const supabase = createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
-  auth: {
-    storage: brokeredPreviewStorage(),
-    persistSession: true,
-    autoRefreshToken: true,
-  }
-});
+// The site must never crash when the backend is unconfigured (e.g. a deploy
+// without env vars): export null and let callers degrade gracefully instead
+// of createClient throwing "supabaseUrl is required" and blanking the page.
+export const supabase =
+  SUPABASE_URL && SUPABASE_PUBLISHABLE_KEY
+    ? createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
+        auth: {
+          storage: brokeredPreviewStorage(),
+          persistSession: true,
+          autoRefreshToken: true,
+        },
+      })
+    : null;
