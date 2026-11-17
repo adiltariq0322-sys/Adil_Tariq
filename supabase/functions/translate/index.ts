@@ -31,8 +31,8 @@ serve(async (req) => {
     }
 
     const targetName = LANG_NAMES[target] || target;
-    const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
-    if (!LOVABLE_API_KEY) throw new Error("LOVABLE_API_KEY missing");
+    const OPENROUTER_API_KEY = Deno.env.get("OPENROUTER_API_KEY");
+    if (!OPENROUTER_API_KEY) throw new Error("OPENROUTER_API_KEY missing");
 
     const systemPrompt = `You are a professional translator. Translate the provided array of UI strings into ${targetName}.
 
@@ -43,11 +43,16 @@ Rules:
 - Return STRICTLY a JSON array of strings, same length and same order as input. Index N in output corresponds to index N in input.
 - For ${targetName === "Arabic" || targetName === "Urdu" ? "RTL" : "LTR"} script, use natural native phrasing.`;
 
-    const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
+    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
-      headers: { Authorization: `Bearer ${LOVABLE_API_KEY}`, "Content-Type": "application/json" },
+      headers: {
+        Authorization: `Bearer ${OPENROUTER_API_KEY}`,
+        "HTTP-Referer": "https://adil-tariq-ai.vercel.app/",
+        "X-Title": "Adil Tariq Portfolio",
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({
-        model: "google/gemini-2.5-flash-lite",
+        model: "openai/gpt-4o-mini",
         messages: [
           { role: "system", content: systemPrompt },
           { role: "user", content: JSON.stringify(texts) },
@@ -77,7 +82,7 @@ Rules:
 
     if (!response.ok) {
       const t = await response.text();
-      console.error("AI gateway error:", response.status, t);
+      console.error("OpenRouter error:", response.status, t);
       if (response.status === 429) {
         return new Response(JSON.stringify({ error: "Rate limited, please try again." }), {
           status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" },
