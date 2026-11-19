@@ -252,7 +252,27 @@ const AdilGPT = () => {
     };
     setMeta(
       "description",
-      "AdilGPT — production-ready AI assistant built with FastAPI, LangGraph, LangChain, Gemini, Groq, Mistral AI, RAG, JWT auth, long-term memory and streaming responses."
+      "AdilGPT — production-ready AI assistant built with FastAPI, LangGraph, LangChain, Gemini, Groq, Mistral AI, RAG, JWT auth and long-term memory."
+    );
+    const setOg = (property: string, content: string) => {
+      let el = document.querySelector(`meta[property="${property}"]`);
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute("property", property);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", content);
+    };
+    setOg("og:title", "AdilGPT — Production-Ready AI Assistant | Hafiz Adil");
+    setOg(
+      "og:description",
+      "AdilGPT — production-ready AI assistant built with FastAPI, LangGraph, LangChain, Gemini, Groq, Mistral AI, RAG, JWT auth and long-term memory."
+    );
+    setOg("og:url", "https://adil-tariq-ai.vercel.app/adilgpt");
+    setMeta("twitter:title", "AdilGPT — Production-Ready AI Assistant | Hafiz Adil");
+    setMeta(
+      "twitter:description",
+      "AdilGPT — production-ready AI assistant built with FastAPI, LangGraph, LangChain, Gemini, Groq, Mistral AI, RAG, JWT auth and long-term memory."
     );
     const canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) canonical.setAttribute("href", "https://adil-tariq-ai.vercel.app/adilgpt");

@@ -30,10 +30,10 @@ const AiSkinSpecialist = () => {
   const consultRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    document.title = "AI Skin Specialist — Voice, Image & Video Skin Consultation | Hafiz Adil";
+    document.title = "AI Skin Specialist — Voice, Image & Video Consultation | Hafiz Adil";
     const desc = document.querySelector('meta[name="description"]');
     const content =
-      "AI-powered skin consultation assistant. Upload an image, record voice, or submit video for skin condition analysis with confidence scores and recommendations.";
+      "AI-powered skin consultation assistant. Upload an image, record voice, or submit video for skin condition analysis with confidence scores.";
     if (desc) desc.setAttribute("content", content);
     else {
       const m = document.createElement("meta");
@@ -41,6 +41,21 @@ const AiSkinSpecialist = () => {
       m.content = content;
       document.head.appendChild(m);
     }
+    const setMetaBy = (attr: string, key: string, value: string) => {
+      let el = document.querySelector(`meta[${attr}="${key}"]`);
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute(attr, key);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", value);
+    };
+    const pageTitle = "AI Skin Specialist — Voice, Image & Video Consultation | Hafiz Adil";
+    setMetaBy("property", "og:title", pageTitle);
+    setMetaBy("property", "og:description", content);
+    setMetaBy("property", "og:url", "https://adil-tariq-ai.vercel.app/ai-skin-specialist");
+    setMetaBy("name", "twitter:title", pageTitle);
+    setMetaBy("name", "twitter:description", content);
     const canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) canonical.setAttribute("href", "https://adil-tariq-ai.vercel.app/ai-skin-specialist");
     else {

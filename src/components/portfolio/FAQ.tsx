@@ -38,6 +38,22 @@ const faqs = [
     q: "What technologies does Hafiz Adil use?",
     a: "Python, LangChain, LangGraph, FastAPI, MCP, Groq and Qdrant, among others — the stack behind his RAG chatbots, AI agents and automation.",
   },
+  {
+    q: "How much experience does Hafiz Adil have?",
+    a: "Hafiz Adil has 2 years of experience building RAG and agentic AI systems, with 2 AI internships and 3 certifications and trainings. He is completing a BS in Computer Science, expected in 2027.",
+  },
+  {
+    q: "What projects has Hafiz Adil built?",
+    a: "15 projects are listed on the site, including AdilGPT, an AI skin specialist, an AI customer support agent, and client websites for NICE Fast Food & Broast, Aurelle Restaurant, Marbrook Estates and Azeem Inspiration Institute.",
+  },
+  {
+    q: "How can I contact Hafiz Adil?",
+    a: "Email adiltariq0327@gmail.com, call 03706710778, or use the contact form on this page — you will get a reply within 24 hours.",
+  },
+  {
+    q: "What is AdilGPT?",
+    a: "AdilGPT is a production-ready AI assistant built with FastAPI, LangGraph, LangChain, Gemini, Groq and Mistral AI, with RAG, JWT authentication, long-term memory and streaming responses.",
+  },
 ];
 
 const FAQ = memo(() => (

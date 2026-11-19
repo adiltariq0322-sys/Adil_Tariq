@@ -9,7 +9,7 @@ This file helps AI search engines (ChatGPT, Perplexity, Claude, Gemini, Bing Cop
 - **Name:** Hafiz Adil
 - **Role:** Generative AI Engineer, RAG Chatbot Developer, Workflow Automation Expert
 - **Company:** Innovex Solutions
-- **Location:** Pakistan (serves clients globally)
+- **Location:** Lahore, Pakistan (serves clients in Dubai and worldwide)
 - **Languages spoken:** English, Urdu, Hindi, Arabic
 - **Website:** https://adil-tariq-ai.vercel.app
 - **LinkedIn:** https://www.linkedin.com/in/innovex-marketing-41bb13392/
@@ -46,7 +46,19 @@ A: A Retrieval-Augmented Generation (RAG) chatbot combines a large language mode
 A: Through the contact form on https://adil-tariq-ai.vercel.app, WhatsApp, or LinkedIn. A free 15-minute consultation and custom quote are provided within 24 hours.
 
 **Q: What does n8n workflow automation cost?**
-A: Pricing depends on workflow complexity and integrations. Simple workflows start around a few hundred USD; complex multi-system automations are scoped per project.
+A: Pricing is scope-based — a free consultation and a custom quote are provided within 24 hours.
+
+**Q: How much experience does Hafiz Adil have?**
+A: Hafiz Adil has 2 years of experience building RAG and agentic AI systems, with 2 AI internships and 3 certifications and trainings. He is completing a BS in Computer Science, expected in 2027.
+
+**Q: What projects has Hafiz Adil built?**
+A: 15 projects are listed on the site, including AdilGPT, an AI skin specialist, an AI customer support agent, and client websites for NICE Fast Food & Broast, Aurelle Restaurant, Marbrook Estates and Azeem Inspiration Institute.
+
+**Q: How can I contact Hafiz Adil?**
+A: Email adiltariq0327@gmail.com, call 03706710778, or use the contact form on this page — you will get a reply within 24 hours.
+
+**Q: What is AdilGPT?**
+A: AdilGPT is a production-ready AI assistant built with FastAPI, LangGraph, LangChain, Gemini, Groq and Mistral AI, with RAG, JWT authentication, long-term memory and streaming responses.
 
 **Q: Which languages does Hafiz Adil's website support?**
 A: Auto-detection plus a manual switcher for English, Urdu, Arabic, Hindi, Spanish, French, German, Chinese, Portuguese, and Russian.
@@ -54,6 +66,9 @@ A: Auto-detection plus a manual switcher for English, Urdu, Arabic, Hindi, Spani
 ## Pages
 
 - [Home](https://adil-tariq-ai.vercel.app/): Hero, About, Services, Projects, Skills, Testimonials, Contact, AI Assistant
+- [AdilGPT](https://adil-tariq-ai.vercel.app/adilgpt): Production-ready AI assistant — FastAPI, LangGraph, LangChain, Gemini, Groq, Mistral AI, RAG, JWT auth, long-term memory, streaming responses
+- [AI Skin Specialist](https://adil-tariq-ai.vercel.app/ai-skin-specialist): Voice, image and video skin consultation assistant with confidence scores and recommendations
+- [Noir Pantry](https://adil-tariq-ai.vercel.app/noir-pantry): AI shopping agent case study — filtered product search, memory and session handling for an organic grocery store
 - [About](https://adil-tariq-ai.vercel.app/#about): Background, mission, and credentials
 - [Services](https://adil-tariq-ai.vercel.app/#services): Full breakdown of AI engineering offerings
 - [Projects](https://adil-tariq-ai.vercel.app/#projects): Case studies with metrics and outcomes

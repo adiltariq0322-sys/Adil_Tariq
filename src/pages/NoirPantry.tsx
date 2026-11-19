@@ -287,12 +287,26 @@ const stack = [
 
 const NoirPantry = () => {
   useEffect(() => {
-    document.title = "Noir Pantry AI Shopping Agent — Case Study | Hafiz Adil";
+    const pageTitle = "Noir Pantry AI Shopping Agent — Case Study | Hafiz Adil";
+    const pageDesc =
+      "Engineering case study: Noir Pantry, an AI shopping agent built with LangChain, Mistral AI (text + vision), SQLite and Streamlit by Hafiz Adil.";
+    document.title = pageTitle;
     const meta = document.querySelector('meta[name="description"]');
-    meta?.setAttribute(
-      "content",
-      "Engineering case study: Noir Pantry, an AI shopping agent built with LangChain, Mistral AI (text + vision), SQLite and Streamlit by Hafiz Adil.",
-    );
+    meta?.setAttribute("content", pageDesc);
+    const setMetaBy = (attr: string, key: string, value: string) => {
+      let el = document.querySelector(`meta[${attr}="${key}"]`);
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute(attr, key);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", value);
+    };
+    setMetaBy("property", "og:title", pageTitle);
+    setMetaBy("property", "og:description", pageDesc);
+    setMetaBy("property", "og:url", "https://adil-tariq-ai.vercel.app/noir-pantry");
+    setMetaBy("name", "twitter:title", pageTitle);
+    setMetaBy("name", "twitter:description", pageDesc);
     const canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) canonical.setAttribute("href", "https://adil-tariq-ai.vercel.app/noir-pantry");
     else {
