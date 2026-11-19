@@ -2,7 +2,6 @@ import { useState, memo } from "react";
 import { motion } from "framer-motion";
 import { Send, MessageCircle, Mail, MapPin, Loader2, Phone, Linkedin, CheckCircle2 } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
 
 const WHATSAPP_NUMBER = "923706710778";
 
@@ -39,25 +38,19 @@ const Contact = memo(() => {
 
     setIsSubmitting(true);
     try {
-      if (!supabase) {
-        toast({
-          title: "Couldn't send message",
-          description: "The contact service isn't set up on this site yet. Please reach out on WhatsApp.",
-          variant: "destructive",
-        });
-        return;
-      }
-      const { data, error } = await supabase.functions.invoke("send-contact-email", {
-        body: {
+      const resp = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
           name: formData.name.trim(),
           email: formData.email.trim(),
           subject: formData.subject.trim(),
           message: formData.message.trim(),
-        },
+        }),
       });
-
-      if (error || (data as any)?.error) {
-        throw new Error(error?.message || (data as any)?.error || "Failed to send");
+      const data = await resp.json().catch(() => ({}));
+      if (!resp.ok || (data as any)?.error) {
+        throw new Error((data as any)?.error || "Failed to send");
       }
 
       toast({ title: "✅ Thank you! I'll reply within 24 hours.", description: "Your message is on its way to Hafiz Adil." });

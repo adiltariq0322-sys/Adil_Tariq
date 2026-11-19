@@ -45,6 +45,17 @@ const Blog = () => (
             transition={{ duration: 0.5, delay: 0.08 * i, ease: "easeOut" }}
             className="glass-card rounded-2xl p-6 sm:p-8 flex flex-col"
           >
+            <Link
+              to={`/blog/${post.slug}`}
+              className="block mb-6 overflow-hidden rounded-xl"
+            >
+              <img
+                src={post.image}
+                alt={post.title}
+                loading="lazy"
+                className="w-full aspect-video object-cover hover:scale-[1.02] transition-transform"
+              />
+            </Link>
             <p className="flex items-center gap-2 text-xs text-muted-foreground">
               <CalendarDays size={14} /> {formatDate(post.date)}
             </p>

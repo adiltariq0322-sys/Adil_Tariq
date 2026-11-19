@@ -12,6 +12,7 @@ export type BlogPost = {
   title: string;
   excerpt: string;
   date: string;
+  image: string;
   content: string;
 };
 
@@ -24,6 +25,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "A RAG chatbot answers your customers using your own documents — your prices, policies and FAQs — so the answers are accurate, not guessed.",
     date: "2026-11-19",
+    image: "/images/blog/rag-chatbot.webp",
     content: stripFrontmatter(ragChatbotMd),
   },
   {
@@ -32,6 +34,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "An AI voice receptionist answers every call, takes bookings and messages, and hands over to a human when it matters — so a missed call stops being a lost customer.",
     date: "2026-11-19",
+    image: "/images/blog/ai-voice-receptionist.webp",
     content: stripFrontmatter(voiceMd),
   },
   {
@@ -40,6 +43,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Your customers already message you on WhatsApp. A WhatsApp AI agent replies instantly, takes bookings and follows up — even when your team is busy or off duty.",
     date: "2026-11-19",
+    image: "/images/blog/whatsapp-ai-agent.webp",
     content: stripFrontmatter(whatsappMd),
   },
   {
@@ -48,6 +52,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "n8n connects the apps you already use and moves routine work between them automatically — so enquiries, bookings and follow-ups stop depending on someone remembering to do them.",
     date: "2026-11-19",
+    image: "/images/blog/automate-n8n.webp",
     content: stripFrontmatter(n8nMd),
   },
 ];

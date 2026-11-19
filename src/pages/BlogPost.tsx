@@ -97,6 +97,11 @@ const BlogPost = () => {
           <p className="text-lg text-muted-foreground leading-relaxed mt-6 border-l-2 border-secondary pl-4">
             {post.excerpt}
           </p>
+          <img
+            src={post.image}
+            alt={post.title}
+            className="w-full aspect-video object-cover rounded-2xl mt-8"
+          />
         </motion.div>
 
         <motion.div
