@@ -69,6 +69,11 @@ A: Auto-detection plus a manual switcher for English, Urdu, Arabic, Hindi, Spani
 - [AdilGPT](https://adil-tariq-ai.vercel.app/adilgpt): Production-ready AI assistant — FastAPI, LangGraph, LangChain, Gemini, Groq, Mistral AI, RAG, JWT auth, long-term memory, streaming responses
 - [AI Skin Specialist](https://adil-tariq-ai.vercel.app/ai-skin-specialist): Voice, image and video skin consultation assistant with confidence scores and recommendations
 - [Noir Pantry](https://adil-tariq-ai.vercel.app/noir-pantry): AI shopping agent case study — filtered product search, memory and session handling for an organic grocery store
+- [Blog](https://adil-tariq-ai.vercel.app/blog): Plain-English guides on RAG chatbots, AI voice receptionists, WhatsApp AI agents and n8n automation for small businesses — new posts daily
+  - [What is a RAG chatbot — and why your business needs one](https://adil-tariq-ai.vercel.app/blog/what-is-a-rag-chatbot)
+  - [Never miss a customer call again: AI voice receptionists](https://adil-tariq-ai.vercel.app/blog/ai-voice-receptionist)
+  - [WhatsApp AI agents: instant replies, bookings and follow-ups](https://adil-tariq-ai.vercel.app/blog/whatsapp-ai-agent)
+  - [Automating the boring work: how small businesses save hours with n8n](https://adil-tariq-ai.vercel.app/blog/automate-with-n8n)
 - [About](https://adil-tariq-ai.vercel.app/#about): Background, mission, and credentials
 - [Services](https://adil-tariq-ai.vercel.app/#services): Full breakdown of AI engineering offerings
 - [Projects](https://adil-tariq-ai.vercel.app/#projects): Case studies with metrics and outcomes

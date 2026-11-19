@@ -13,6 +13,8 @@ import NotFound from "./pages/NotFound.tsx";
 const AiSkinSpecialist = lazy(() => import("./pages/AiSkinSpecialist.tsx"));
 const AdilGPT = lazy(() => import("./pages/AdilGPT.tsx"));
 const NoirPantry = lazy(() => import("./pages/NoirPantry.tsx"));
+const Blog = lazy(() => import("./pages/Blog.tsx"));
+const BlogPost = lazy(() => import("./pages/BlogPost.tsx"));
 
 const queryClient = new QueryClient();
 
@@ -36,6 +38,8 @@ const App = () => (
               <Route path="/ai-skin-specialist" element={<AiSkinSpecialist />} />
               <Route path="/adilgpt" element={<AdilGPT />} />
               <Route path="/noir-pantry" element={<NoirPantry />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
