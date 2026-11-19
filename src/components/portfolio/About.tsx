@@ -68,8 +68,8 @@ const About = memo(() => (
           className="text-muted-foreground text-sm sm:text-base md:text-lg leading-relaxed space-y-4"
         >
           <p>
-            I'm <span className="text-foreground font-semibold">Hafiz Adil</span>, an AI Engineer with two years of hands-on experience building
-            practical applications with Python, RAG, LangChain, LangGraph and modern AI APIs.
+            I'm <span className="text-foreground font-semibold">Hafiz Adil</span>, an AI Engineer based in Lahore, Pakistan, with two years of hands-on experience building
+            practical applications with Python, RAG, LangChain, LangGraph and modern AI APIs — for clients in Dubai and worldwide.
           </p>
           <p>
             Through internships, structured training and hands-on projects, I've developed experience with document Q&amp;A systems, agentic

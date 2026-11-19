@@ -58,11 +58,11 @@ const TiltCard = ({ icon: Icon, title, desc, index }: ServiceCardProps) => {
 
 const services = [
   { icon: Brain, title: "Generative AI & LLM Solutions", desc: "Custom GPT-powered apps, fine-tuned LLMs, and AI copilots that automate decisions, generate content, and unlock new revenue streams for your business." },
-  { icon: Bot, title: "Custom RAG Chatbots & AI Agents", desc: "Context-aware chatbots and autonomous agents trained on your data. Cut support costs by 60% with 24/7 accurate, on-brand customer conversations." },
+  { icon: Bot, title: "Custom RAG Chatbots & AI Agents", desc: "Context-aware chatbots and autonomous agents trained on your data, working on your website and WhatsApp. Cut support costs by 60% with 24/7 accurate, on-brand customer conversations." },
   { icon: Workflow, title: "Workflow Automation", desc: "End-to-end automation across WhatsApp, Gmail, CRM, and APIs. Replace repetitive tasks with intelligent workflows that scale without hiring." },
   { icon: Code2, title: "Python Development & AI Integration", desc: "Production-grade Python backends, APIs, and AI integrations. Connect ML models to your existing stack with clean, scalable, well-tested code." },
   { icon: Globe, title: "Website Development", desc: "Modern, responsive websites built around your brand and business goals—from polished portfolios and landing pages to full web applications." },
-  { icon: AudioLines, title: "AI Voice Agents", desc: "Voice assistants that can handle natural conversations, answer common questions, qualify leads, and connect with your existing workflows." },
+  { icon: AudioLines, title: "AI Voice Agents", desc: "AI voice receptionists and voice assistants that handle natural conversations, answer common questions, qualify leads, and connect with your existing workflows." },
   { icon: Clapperboard, title: "UGC Ads & Short-Form Video", desc: "Platform-ready UGC-style ad concepts and short-form videos designed to make your product clear, relatable, and easy to act on." },
   { icon: Megaphone, title: "AI Marketing & Paid Ads", desc: "AI-assisted campaign planning, audience research, ad copy, and creative testing for Facebook, Instagram, TikTok, and Google Ads." },
 ];

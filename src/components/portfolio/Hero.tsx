@@ -81,7 +81,7 @@ const Hero = memo(() => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.45, duration: 0.55 }}
             >
-              I build practical AI products with Python, LangChain, LangGraph and FastAPI—turning two years of hands-on AI work into useful retrieval, dependable workflows and clear business outcomes.
+              I build practical AI products with Python, LangChain, LangGraph and FastAPI—turning two years of hands-on AI work into useful retrieval, dependable workflows and clear business outcomes. Based in Lahore, Pakistan, I work with clients in Dubai and worldwide.
             </motion.p>
 
             <motion.div
