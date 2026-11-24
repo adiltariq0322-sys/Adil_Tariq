@@ -103,6 +103,42 @@ export type Project = {
  */
 export const projects: Project[] = [
   {
+    id: "ai-drone-video-real-estate",
+    title: "AI Drone Video — Real Estate Walkthrough",
+    category: "Generative AI",
+    tagline: "AI Video · Property Walkthrough · 9:16 Vertical",
+    shortDescription:
+      "A cinematic AI drone-style walkthrough video made from listing photos — no filming or visit needed. Sample: 601 S Jupiter Rd, Allen, TX (7,262 sq ft).",
+    overview:
+      "A smooth, continuous AI-generated walkthrough video created from a property's existing listing photos. The camera glides from the street through the front door and into the living spaces, with the address and square footage shown as on-screen text. No filming, no visit, no drone on site — the whole video is made from photos the broker already has. This sample was made for 601 S Jupiter Rd, Allen, TX, a 7,262 sq ft home.",
+    problemStatement:
+      "Buyers skip listings with only still photos. Brokers need a video tour, but a real drone shoot costs time and money and needs a site visit.",
+    features: [
+      "Made entirely from the listing's existing photos",
+      "Continuous cinematic walkthrough — exterior to interior",
+      "On-screen address and square-footage text",
+      "Vertical 9:16 format, ready for Instagram, TikTok and Reels",
+      "No filming, no visit, no drone on site",
+    ],
+    tech: ["AI Video Generation", "Higgsfield", "Real Estate Marketing", "Vertical Video"],
+    result: "Sample walkthrough video for a 7,262 sq ft home, made from photos only",
+    metrics: [
+      { label: "Property size", value: "7,262 sq ft" },
+      { label: "Format", value: "9:16 vertical" },
+      { label: "Filming needed", value: "None" },
+    ],
+    keywords: ["ai drone video", "real estate video", "property walkthrough", "listing video", "higgsfield", "vertical video", "broker marketing"],
+    icon: Sparkles,
+    image: "https://drive.google.com/thumbnail?id=1uI8hH_ETDUe7-kUZqvkBzx8BGHuEDSiE&sz=w1000",
+    imageAlt: "AI drone-style walkthrough video sample — exterior of 601 S Jupiter Rd, Allen, TX",
+    badge: "Generative AI · Real Estate Video",
+    accent: "emerald",
+    gradient: "from-neon-emerald/25 via-neon-teal/15 to-transparent",
+    liveDemo: "https://drive.google.com/file/d/1uI8hH_ETDUe7-kUZqvkBzx8BGHuEDSiE/view?usp=drivesdk",
+    featured: true,
+    priority: 120,
+  },
+  {
     id: "nice-fast-food-broast-website",
     title: "NICE Fast Food & Broast",
     category: "Web Development",
