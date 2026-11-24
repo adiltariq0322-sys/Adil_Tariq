@@ -53,6 +53,45 @@ const BlogPost = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    if (!post) return;
+    const url = `https://adil-tariq-ai.vercel.app/blog/${post.slug}`;
+    document.title = `${post.title} | Hafiz Adil`;
+    const setMeta = (name: string, content: string) => {
+      let el = document.querySelector(`meta[name="${name}"]`);
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute("name", name);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", content);
+    };
+    setMeta("description", post.excerpt);
+    const setOg = (property: string, content: string) => {
+      let el = document.querySelector(`meta[property="${property}"]`);
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute("property", property);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", content);
+    };
+    setOg("og:title", `${post.title} | Hafiz Adil`);
+    setOg("og:description", post.excerpt);
+    setOg("og:url", url);
+    setOg("og:image", `https://adil-tariq-ai.vercel.app${post.image}`);
+    setMeta("twitter:title", `${post.title} | Hafiz Adil`);
+    setMeta("twitter:description", post.excerpt);
+    // GSC 2026-11-19: blog posts served the homepage canonical
+    // (index.html), so Google filed them as "Alternate page with proper
+    // canonical tag" and would not index them. Point it at the post URL.
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute("href", url);
+    else {
+      const link = document.createElement("link");
+      link.setAttribute("rel", "canonical");
+      link.setAttribute("href", url);
+      document.head.appendChild(link);
+    }
   }, [slug]);
 
   if (!post) {
@@ -100,6 +139,8 @@ const BlogPost = () => {
           <img
             src={post.image}
             alt={post.title}
+            width={post.imageWidth}
+            height={post.imageHeight}
             className="w-full aspect-video object-cover rounded-2xl mt-8"
           />
         </motion.div>

@@ -52,7 +52,7 @@ const AllProjects = memo(() => {
   }, []);
 
   return (
-    <section id="projects" className="section-padding relative">
+    <section id="projects" className="section-padding relative scroll-mt-20">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div

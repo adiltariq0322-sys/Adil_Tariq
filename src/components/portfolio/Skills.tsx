@@ -26,7 +26,7 @@ const groups = [
 ];
 
 const Skills = memo(() => (
-  <section id="skills" className="section-padding relative">
+  <section id="skills" className="section-padding relative scroll-mt-20">
     <div className="max-w-6xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 30 }}

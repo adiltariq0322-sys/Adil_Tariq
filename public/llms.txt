@@ -74,6 +74,11 @@ A: Auto-detection plus a manual switcher for English, Urdu, Arabic, Hindi, Spani
   - [Never miss a customer call again: AI voice receptionists](https://adil-tariq-ai.vercel.app/blog/ai-voice-receptionist)
   - [WhatsApp AI agents: instant replies, bookings and follow-ups](https://adil-tariq-ai.vercel.app/blog/whatsapp-ai-agent)
   - [Automating the boring work: how small businesses save hours with n8n](https://adil-tariq-ai.vercel.app/blog/automate-with-n8n)
+  - [ChatGPT just became a storefront — what your business should do about it](https://adil-tariq-ai.vercel.app/blog/businesses-in-chatgpt)
+  - [Google's AI is now phoning your business — is your front desk ready?](https://adil-tariq-ai.vercel.app/blog/gemini-tasks-ai-calling-your-business)
+  - [Two-thirds of small businesses now use AI — the question is no longer if, but how well](https://adil-tariq-ai.vercel.app/blog/two-thirds-of-small-businesses-now-use-ai)
+  - [Your next customer might be an AI agent — and it is already checking out](https://adil-tariq-ai.vercel.app/blog/ai-shopping-agents-checkout)
+  - [Google's AI now answers for your business before you do](https://adil-tariq-ai.vercel.app/blog/google-ai-answers-your-brand-search)
 - [About](https://adil-tariq-ai.vercel.app/#about): Background, mission, and credentials
 - [Services](https://adil-tariq-ai.vercel.app/#services): Full breakdown of AI engineering offerings
 - [Projects](https://adil-tariq-ai.vercel.app/#projects): Case studies with metrics and outcomes

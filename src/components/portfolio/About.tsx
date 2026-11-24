@@ -20,7 +20,7 @@ const focusAreas = [
 ];
 
 const About = memo(() => (
-  <section id="about" className="section-padding relative">
+  <section id="about" className="section-padding relative scroll-mt-20">
     <div className="max-w-6xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 30 }}

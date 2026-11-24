@@ -3,6 +3,8 @@
 // 0325, while the form sends to 0327).
 // Sends the lead to Adil via Resend. The key comes from the RESEND_API_KEY
 // env var (server-side only, never in the repo).
+// Key rotated 2026-11-19 (new "portfolio-contact-form" key, 0322 account);
+// this redeploy picks up the updated Vercel env var.
 
 type ContactBody = { name?: unknown; email?: unknown; subject?: unknown; message?: unknown };
 

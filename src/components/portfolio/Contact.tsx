@@ -78,7 +78,7 @@ const Contact = memo(() => {
     focused === field || formData[field]?.length > 0;
 
   return (
-    <section id="contact" className="section-padding relative">
+    <section id="contact" className="section-padding relative scroll-mt-20">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { MotionConfig } from "framer-motion";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { lazy, Suspense, useEffect } from "react";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -18,6 +18,36 @@ const BlogPost = lazy(() => import("./pages/BlogPost.tsx"));
 
 const queryClient = new QueryClient();
 
+// Scroll to the element matching the URL hash after a route change (e.g.
+// navbar link from /blog to /#services), or to the top when the new route
+// has no hash. Without this, a hash link from another route lands on the
+// homepage but never scrolls to the section. The homepage sections are
+// lazy-loaded, so retry briefly until the target is mounted.
+function ScrollToHash() {
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (!hash) {
+      window.scrollTo(0, 0);
+      return;
+    }
+    const id = hash.slice(1);
+    let attempts = 0;
+    let timer: number | undefined;
+    const attempt = () => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+      attempts += 1;
+      if (attempts < 12) timer = window.setTimeout(attempt, 200);
+    };
+    timer = window.setTimeout(attempt, 100);
+    return () => window.clearTimeout(timer);
+  }, [pathname, hash]);
+  return null;
+}
+
 const isMobile =
   typeof window !== "undefined" && window.matchMedia("(max-width: 767px)").matches;
 
@@ -32,6 +62,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToHash />
           <Suspense fallback={<div className="min-h-screen" />}>
             <Routes>
               <Route path="/" element={<Index />} />

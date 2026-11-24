@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, CalendarDays, BookOpen } from "lucide-react";
@@ -13,7 +14,52 @@ const formatDate = (iso: string) =>
     year: "numeric",
   });
 
-const Blog = () => (
+const Blog = () => {
+  useEffect(() => {
+    document.title = "Blog — AI, automation & practical guides | Hafiz Adil";
+    const setMeta = (name: string, content: string) => {
+      let el = document.querySelector(`meta[name="${name}"]`);
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute("name", name);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", content);
+    };
+    setMeta(
+      "description",
+      "Plain-English notes on RAG chatbots, AI voice receptionists, WhatsApp agents and business automation — written for small-business owners."
+    );
+    const setOg = (property: string, content: string) => {
+      let el = document.querySelector(`meta[property="${property}"]`);
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute("property", property);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", content);
+    };
+    setOg("og:title", "Blog — AI, automation & practical guides | Hafiz Adil");
+    setOg(
+      "og:description",
+      "Plain-English notes on RAG chatbots, AI voice receptionists, WhatsApp agents and business automation — written for small-business owners."
+    );
+    setOg("og:url", "https://adil-tariq-ai.vercel.app/blog");
+    setMeta("twitter:title", "Blog — AI, automation & practical guides | Hafiz Adil");
+    // GSC 2026-11-19: /blog served the homepage canonical (index.html), so
+    // Google filed it as "Alternate page with proper canonical tag" and
+    // would not index it. Point the canonical at /blog itself.
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute("href", "https://adil-tariq-ai.vercel.app/blog");
+    else {
+      const link = document.createElement("link");
+      link.setAttribute("rel", "canonical");
+      link.setAttribute("href", "https://adil-tariq-ai.vercel.app/blog");
+      document.head.appendChild(link);
+    }
+  }, []);
+
+  return (
   <div className="min-h-screen bg-background text-foreground font-body overflow-x-hidden">
     <ParticleField />
     <Navbar />
@@ -53,6 +99,8 @@ const Blog = () => (
                 src={post.image}
                 alt={post.title}
                 loading="lazy"
+                width={post.imageWidth}
+                height={post.imageHeight}
                 className="w-full aspect-video object-cover hover:scale-[1.02] transition-transform"
               />
             </Link>
@@ -77,6 +125,7 @@ const Blog = () => (
     </main>
     <Footer />
   </div>
-);
+  );
+};
 
 export default Blog;
