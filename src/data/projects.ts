@@ -101,6 +101,7 @@ export type Project = {
  * Add new projects by appending to this array. The grid, filter bar,
  * search, and details modal will pick them up automatically.
  */
+// Redeploy trigger 2026-11-25 — forces Vercel to rebuild so the AI Drone Video project goes live.
 export const projects: Project[] = [
   {
     id: "ai-drone-video-real-estate",
