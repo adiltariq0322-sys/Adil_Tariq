@@ -1,12 +1,12 @@
 import { useEffect, useState, memo } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Github } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Button } from "@/components/ui/button";
 import portrait from "@/assets/adil-tariq-portrait.webp";
 
 
-const titles = ["RAG Systems", "Agentic AI with LangGraph", "AI Voice Receptionists", "Business Websites & Stores", "WhatsApp AI Agents", "Python · FastAPI · Next.js"];
+const titles = ["AI Voice Receptionists", "RAG Chatbots", "WhatsApp AI Agents", "Business Websites & Stores", "Workflow Automation", "SEO & Local Search"];
 
 const Hero = memo(() => {
   const [displayText, setDisplayText] = useState("");
@@ -62,7 +62,7 @@ const Hero = memo(() => {
             >
               <span className="h-px w-8 bg-secondary" />
               <p className="text-xs sm:text-sm font-heading font-semibold uppercase text-secondary">
-                Hafiz Adil · AI Engineer
+                InnoVex · AI Agency for Small Businesses
               </p>
             </motion.div>
 
@@ -72,7 +72,7 @@ const Hero = memo(() => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.25, duration: 0.65 }}
             >
-              AI Engineer with <span className="text-primary">2 years’ experience</span> building AI agents, RAG systems &amp; websites for real businesses.
+              We build AI that brings small businesses <span className="text-primary">more customers</span>.
             </motion.h1>
 
             <motion.p
@@ -81,7 +81,7 @@ const Hero = memo(() => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.45, duration: 0.55 }}
             >
-              I run InnoVex, building AI agents, business websites and automation for small businesses — from Lahore to Dubai and worldwide. Python, LangChain, LangGraph, FastAPI and Next.js, turned into products clients actually use.
+              InnoVex is an AI agency in Lahore. We build AI agents, business websites and automation for clinics, restaurants, real estate and auto businesses — in Lahore, Dubai and worldwide. Every project starts with a free demo: you see the result before you pay anything.
             </motion.p>
 
             <motion.div
@@ -102,15 +102,15 @@ const Hero = memo(() => {
               transition={{ delay: 0.65, duration: 0.55 }}
             >
               <Button asChild size="lg" className="group min-h-12 rounded-sm font-heading font-semibold">
-                <a href="#projects">
-                  Explore Projects
+                <a href="#contact">
+                  Get a Free Demo
                   <ArrowRight className="transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="min-h-12 rounded-sm border-secondary/45 bg-background/40 text-foreground hover:bg-secondary/10 hover:text-secondary">
-                <a href="https://github.com/adiltariq234" target="_blank" rel="noopener noreferrer">
-                  <Github aria-hidden="true" />
-                  View GitHub
+                <a href="#projects">
+                  Explore Projects
+                  <ArrowRight className="transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
                 </a>
               </Button>
             </motion.div>
@@ -122,9 +122,9 @@ const Hero = memo(() => {
               transition={{ delay: 0.8, duration: 0.55 }}
             >
               {[
-                ["Experience", "2 years in AI"],
-                ["Core stack", "Python · FastAPI · Next.js"],
-                ["Availability", "Taking on client projects"],
+                ["Projects delivered", "18"],
+                ["Services", "9"],
+                ["Free demo", "In 2 days"],
               ].map(([label, value]) => (
                 <div key={label}>
                   <p className="text-xs text-muted-foreground">{label}</p>
@@ -145,7 +145,7 @@ const Hero = memo(() => {
             <div className="relative aspect-[4/5] overflow-hidden border border-border bg-card shadow-elegant">
               <img
                 src={portrait}
-                alt="Hafiz Adil — AI Engineer specialising in RAG and Agentic AI systems"
+                alt="Hafiz Adil — Founder, InnoVex"
                 width={800}
                 height={1000}
                 loading="eager"
@@ -156,7 +156,7 @@ const Hero = memo(() => {
               <p className="text-xs text-muted-foreground">Current status</p>
               <p className="mt-1 flex items-center gap-2 text-xs sm:text-sm font-heading font-medium text-foreground">
                 <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
-                Taking on new projects
+                Now taking on new clients
               </p>
             </div>
           </motion.div>

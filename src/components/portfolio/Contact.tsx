@@ -53,7 +53,7 @@ const Contact = memo(() => {
         throw new Error((data as any)?.error || "Failed to send");
       }
 
-      toast({ title: "✅ Thank you! I'll reply within 24 hours.", description: "Your message is on its way to Hafiz Adil." });
+      toast({ title: "✅ Thank you! We'll reply within 24 hours.", description: "Your message is on its way to InnoVex." });
       setFormData({ name: "", email: "", subject: "", message: "" });
       setFocused(null);
       setSent(true);
@@ -87,7 +87,7 @@ const Contact = memo(() => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 sm:mb-16"
         >
-          <p className="text-xs sm:text-sm tracking-[0.3em] uppercase text-neon-emerald mb-3 font-body">Get In Touch</p>
+          <p className="text-xs sm:text-sm tracking-[0.3em] uppercase text-neon-emerald mb-3 font-body">Get Your Free Demo</p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold neon-text shimmer-text">Let's Work Together</h2>
         </motion.div>
 
@@ -100,8 +100,8 @@ const Contact = memo(() => {
             className="space-y-6 sm:space-y-8"
           >
             <p className="text-xs sm:text-sm md:text-base text-muted-foreground leading-relaxed">
-              Ready to bring AI-powered intelligence to your business? Let's discuss how I can help
-              automate your workflows, build intelligent systems, and drive measurable results.
+              Tell us about your business — we'll show you a free working demo and a plan to bring in more customers. No obligation, and
+              we'll reply within 24 hours.
             </p>
 
             <div className="space-y-3 sm:space-y-4">
@@ -149,8 +149,8 @@ const Contact = memo(() => {
               <div className="flex items-start gap-3 p-3 rounded-lg bg-neon-emerald/10 border border-neon-emerald/30">
                 <CheckCircle2 className="w-5 h-5 text-neon-emerald shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-sm font-medium text-foreground">Thank you! I'll reply within 24 hours.</p>
-                  <p className="text-xs text-muted-foreground">Your message has been delivered to Hafiz Adil.</p>
+                  <p className="text-sm font-medium text-foreground">Thank you! We'll reply within 24 hours.</p>
+                  <p className="text-xs text-muted-foreground">Your message has been delivered to InnoVex.</p>
                 </div>
               </div>
             )}

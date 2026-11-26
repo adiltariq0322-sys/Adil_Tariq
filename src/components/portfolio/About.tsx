@@ -1,13 +1,13 @@
 import { memo } from "react";
 import { motion } from "framer-motion";
-import { Brain, Bot, GraduationCap, BookOpen } from "lucide-react";
+import { Bot, Layers, Globe, Zap } from "lucide-react";
 import portrait from "@/assets/adil-tariq-portrait.webp";
 
 const highlights = [
-  { icon: Brain, label: "AI Internships", value: "2" },
-  { icon: Bot, label: "Hands-on AI Projects", value: "18" },
-  { icon: BookOpen, label: "Certifications & Trainings", value: "4" },
-  { icon: GraduationCap, label: "BS CS — Expected", value: "2027" },
+  { icon: Bot, label: "Projects Delivered", value: "18" },
+  { icon: Layers, label: "Services", value: "9" },
+  { icon: Globe, label: "Live Websites", value: "3" },
+  { icon: Zap, label: "Free Demo", value: "2 Days" },
 ];
 
 const focusAreas = [
@@ -29,9 +29,9 @@ const About = memo(() => (
         transition={{ duration: 0.6 }}
         className="text-center mb-12 sm:mb-16"
       >
-        <p className="text-xs sm:text-sm tracking-[0.3em] uppercase text-neon-emerald mb-3 font-body">About Me</p>
+        <p className="text-xs sm:text-sm tracking-[0.3em] uppercase text-neon-emerald mb-3 font-body">About InnoVex</p>
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold neon-text shimmer-text">
-          AI Engineer · Founder, InnoVex · RAG &amp; Agentic AI
+          The AI agency for small businesses
         </h2>
       </motion.div>
 
@@ -55,7 +55,7 @@ const About = memo(() => (
             />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background via-background/70 to-transparent p-4">
               <p className="font-heading font-semibold text-foreground text-sm sm:text-base">Hafiz Adil</p>
-              <p className="text-xs text-neon-emerald">AI Engineer · RAG &amp; Agentic AI</p>
+              <p className="text-xs text-neon-emerald">Founder, InnoVex</p>
             </div>
           </div>
         </motion.div>
@@ -68,18 +68,19 @@ const About = memo(() => (
           className="text-muted-foreground text-sm sm:text-base md:text-lg leading-relaxed space-y-4"
         >
           <p>
-            I'm <span className="text-foreground font-semibold">Hafiz Adil</span>, an AI Engineer from Lahore, Pakistan. I run{" "}
-            <span className="text-foreground font-semibold">InnoVex</span>, where I build practical AI products — AI agents, business
-            websites and automation — with Python, RAG, LangChain, LangGraph and Next.js, for small businesses in Lahore, Dubai and worldwide.
+            <span className="text-foreground font-semibold">InnoVex</span> is an AI agency based in Lahore, Pakistan. We build AI agents,
+            business websites and automation for small businesses — clinics, restaurants, real estate agencies and auto businesses in Lahore,
+            Dubai and worldwide.
           </p>
           <p>
-            Through internships at Decode Labs and HopeToSkill, structured training and 18 hands-on projects, I've built document Q&amp;A
-            systems, agentic workflows, AI voice receptionists and WhatsApp agents — and shipped live sites, including a Next.js storefront
-            for EverShine and a scroll-cinematic villa website.
+            We don't sell technology. We sell outcomes:{" "}
+            <span className="text-neon-emerald">more calls, more bookings, more customers</span>. Every project starts with a free working
+            demo — you see the result before you pay anything.
           </p>
           <p>
-            I work with small businesses that need a website, an AI agent, or automation that actually saves time — and I build it end to
-            end, from the first demo to the <span className="text-neon-emerald">live product</span>.
+            Our work is already live: a Next.js storefront for EverShine, a scroll-cinematic villa website, and a website for Azeem
+            Inspiration Institute — plus AI receptionists and WhatsApp agents built for{" "}
+            <span className="text-neon-emerald">real businesses</span>.
           </p>
         </motion.div>
       </div>
