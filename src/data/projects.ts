@@ -104,6 +104,42 @@ export type Project = {
 // Redeploy trigger 2026-11-25 — forces Vercel to rebuild so the AI Drone Video project goes live.
 export const projects: Project[] = [
   {
+    id: "evershine-cleaning-products-store",
+    title: "EverShine — Cleaning Products Store",
+    category: "Web Development",
+    tagline: "Luxury E-Commerce Store · Next.js · WooCommerce",
+    shortDescription:
+      "A luxury headless e-commerce storefront for EverShine cleaning products — Next.js + WooCommerce, rotating product-ring hero, real prices, COD + WhatsApp checkout.",
+    overview:
+      "EverShine's online store — a Next.js headless storefront on WooCommerce: 21 cleaning products + 9 bundles with real prices, a BUNTO-style rotating product ring hero, COD and WhatsApp ordering, Lahore flat shipping, and a 10% coupon. Luxury navy + gold design, fully responsive.",
+    problemStatement:
+      "A cleaning-products brand selling on WhatsApp alone needed a real storefront — browsable products, real prices, and an easy way to order — without losing the personal WhatsApp touch.",
+    features: [
+      "21 products + 9 bundles with real prices",
+      "BUNTO-style rotating product-ring hero",
+      "COD + WhatsApp checkout",
+      "10% coupon (EVERSHINE10)",
+      "Lahore flat shipping Rs 150",
+    ],
+    tech: ["Next.js", "WooCommerce", "React", "Tailwind CSS", "Vercel"],
+    result: "Live storefront — all 55 BeyondSEO audit issues fixed live",
+    metrics: [
+      { label: "Products", value: "21" },
+      { label: "Bundles", value: "9" },
+      { label: "SEO issues fixed", value: "55" },
+    ],
+    keywords: ["ecommerce", "cleaning products", "lahore", "woocommerce", "next.js", "headless", "online store", "evershine"],
+    icon: ShoppingBag,
+    image: "https://www.evershines.shop/images/evershine-hero.jpg",
+    imageAlt: "EverShine cleaning products — Phenyl, Toilet Cleaner, Hand Wash, Dish Wash, Glass Cleaner and Body Wash lineup",
+    badge: "Web Development · E-Commerce",
+    accent: "gold",
+    gradient: "from-neon-gold/25 via-neon-teal/15 to-transparent",
+    liveDemo: "https://www.evershines.shop",
+    featured: true,
+    priority: 121,
+  },
+  {
     id: "ai-with-adil-luxury-villa-flythrough",
     title: "AI with ADIL — Luxury Villa Flythrough",
     category: "Web Development",
