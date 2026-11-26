@@ -104,6 +104,43 @@ export type Project = {
 // Redeploy trigger 2026-11-25 — forces Vercel to rebuild so the AI Drone Video project goes live.
 export const projects: Project[] = [
   {
+    id: "ai-with-adil-luxury-villa-flythrough",
+    title: "AI with ADIL — Luxury Villa Flythrough",
+    category: "Web Development",
+    secondaryCategories: ["Generative AI"],
+    tagline: "Scroll-Cinematic Website · AI Video · Real Estate",
+    shortDescription:
+      "A scroll-driven cinematic villa website — the camera flies through 4 AI-generated scenes (dusk exterior, corridor, atrium, daylight) as you scroll. Built with the lets-scroll engine.",
+    overview:
+      "A luxury villa website where scrolling flies the camera through the property: a dusk exterior, a warm interior corridor, a double-height atrium with skylight and indoor pool, and a daylight exterior. All four scenes are AI-generated video dives (Google Flow), chained into one seamless scroll-driven journey with the lets-scroll engine — scenes crossfade between dives. Mobile-optimized video variants included. Brand: AI with ADIL.",
+    problemStatement:
+      "A property website with only still photos cannot sell the feeling of walking through a villa. This site makes the scroll itself the tour — the camera glides through the home as the visitor scrolls.",
+    features: [
+      "4 AI-generated video dives chained into one scroll journey",
+      "Scroll-scrubbed camera flights with crossfade transitions",
+      "Scene navigation with dot rail and per-scene copy",
+      "Mobile-optimized video variants (720p)",
+      "Warm cream + gold luxury theme",
+    ],
+    tech: ["lets-scroll", "Google Flow", "AI Video Generation", "Scroll Animation", "Vercel"],
+    result: "Live scroll-cinematic villa site — visual check passed on all 4 scenes",
+    metrics: [
+      { label: "Scenes", value: "4" },
+      { label: "Video dives", value: "4" },
+      { label: "Format", value: "720p" },
+    ],
+    keywords: ["real estate", "villa", "luxury", "scroll cinematic", "flythrough", "lets-scroll", "ai video", "google flow", "property website"],
+    icon: Building2,
+    image: "https://villa-flythrough.vercel.app/assets/s01-hero-exterior-dusk.webp",
+    imageAlt: "AI with ADIL luxury villa flythrough — dusk villa exterior with pool, lawn and palms",
+    badge: "Web Development · Real Estate",
+    accent: "gold",
+    gradient: "from-neon-gold/25 via-neon-emerald/15 to-transparent",
+    liveDemo: "https://villa-flythrough.vercel.app",
+    featured: true,
+    priority: 122,
+  },
+  {
     id: "ai-drone-video-real-estate",
     title: "AI Drone Video — Real Estate Walkthrough",
     category: "Generative AI",
