@@ -4,6 +4,17 @@ import { Briefcase, GraduationCap, Award } from "lucide-react";
 
 const experience = [
   {
+    role: "Founder & AI Engineer",
+    org: "InnoVex",
+    period: "2026 – Present",
+    points: [
+      "Building and selling websites, AI agents and automation for small businesses in Lahore, Dubai and worldwide.",
+      "Shipped a live Next.js + WooCommerce storefront for EverShine and a scroll-cinematic villa website.",
+      "Running B2B cold-email outreach (TorqueTalk) and AI drone-video pitches for real estate brokers.",
+      "Building AI voice receptionists, WhatsApp agents and RAG chatbots from demo to live product.",
+    ],
+  },
+  {
     role: "AI Engineer Intern",
     org: "Decode Labs",
     period: "May 5 – Aug 5, 2026 · 3 Months",
@@ -33,6 +44,7 @@ const certifications = [
   { title: "AI Engineer Course", org: "DigiSkills.pk" },
   { title: "Retrieval-Augmented Generation (RAG)", org: "HopeToSkill" },
   { title: "Agentic AI Systems", org: "HopeToSkill" },
+  { title: "AI-Assisted Software Development (DSTP 3.0 Batch-05)", org: "DigiSkills.pk — In progress, started Dec 2026" },
 ];
 
 const Experience = memo(() => (
@@ -100,7 +112,7 @@ const Experience = memo(() => (
               <p className="text-xs sm:text-sm text-neon-gold">Leads University</p>
             </div>
           </div>
-          <p className="text-[11px] sm:text-xs text-muted-foreground mb-4">In Progress — Expected 2027</p>
+          <p className="text-[11px] sm:text-xs text-muted-foreground mb-4">In Progress — Expected March 2027</p>
           <div className="flex flex-wrap gap-2">
             {["Artificial Intelligence", "Machine Learning", "Data Structures & Algorithms"].map((t) => (
               <span key={t} className="text-[11px] sm:text-xs px-3 py-1 rounded-full bg-muted text-muted-foreground">

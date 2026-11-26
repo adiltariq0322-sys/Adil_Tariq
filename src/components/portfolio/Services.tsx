@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { Brain, Bot, Workflow, Code2, Globe, AudioLines, Clapperboard, Megaphone, ArrowRight, type LucideIcon } from "lucide-react";
+import { Brain, Bot, Workflow, Code2, Globe, AudioLines, Clapperboard, Megaphone, Search, ArrowRight, type LucideIcon } from "lucide-react";
 import { useRef, type MouseEvent, memo } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -61,7 +61,8 @@ const services = [
   { icon: Bot, title: "Custom RAG Chatbots & AI Agents", desc: "Context-aware chatbots and autonomous agents trained on your data, working on your website and WhatsApp. Cut support costs by 60% with 24/7 accurate, on-brand customer conversations." },
   { icon: Workflow, title: "Workflow Automation", desc: "End-to-end automation across WhatsApp, Gmail, CRM, and APIs. Replace repetitive tasks with intelligent workflows that scale without hiring." },
   { icon: Code2, title: "Python Development & AI Integration", desc: "Production-grade Python backends, APIs, and AI integrations. Connect ML models to your existing stack with clean, scalable, well-tested code." },
-  { icon: Globe, title: "Website Development", desc: "Modern, responsive websites built around your brand and business goals—from polished portfolios and landing pages to full web applications." },
+  { icon: Globe, title: "Website Development", desc: "Modern, responsive websites built around your brand and business goals — from polished portfolios and landing pages to full online stores and web applications." },
+  { icon: Search, title: "SEO & Local Search", desc: "Technical SEO, local search and content that puts small businesses on Google's first page — slow, steady ranking on the keywords their customers actually search." },
   { icon: AudioLines, title: "AI Voice Agents", desc: "AI voice receptionists and voice assistants that handle natural conversations, answer common questions, qualify leads, and connect with your existing workflows." },
   { icon: Clapperboard, title: "UGC Ads & Short-Form Video", desc: "Platform-ready UGC-style ad concepts and short-form videos designed to make your product clear, relatable, and easy to act on." },
   { icon: Megaphone, title: "AI Marketing & Paid Ads", desc: "AI-assisted campaign planning, audience research, ad copy, and creative testing for Facebook, Instagram, TikTok, and Google Ads." },
@@ -79,7 +80,7 @@ const Services = memo(() => (
       >
         <p className="text-xs sm:text-sm tracking-[0.3em] uppercase text-secondary mb-3 font-body">What I Do</p>
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">AI & Digital Services</h2>
-        <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-2">Practical AI, web, voice, and creative solutions shaped around your business goals.</p>
+        <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-2">Practical AI, web, SEO, voice, and creative solutions shaped around your business goals.</p>
       </motion.div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6" style={{ perspective: 1000 }}>

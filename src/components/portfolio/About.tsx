@@ -5,8 +5,8 @@ import portrait from "@/assets/adil-tariq-portrait.webp";
 
 const highlights = [
   { icon: Brain, label: "AI Internships", value: "2" },
-  { icon: Bot, label: "Hands-on AI Projects", value: "Selected" },
-  { icon: BookOpen, label: "Certifications & Trainings", value: "3" },
+  { icon: Bot, label: "Hands-on AI Projects", value: "18" },
+  { icon: BookOpen, label: "Certifications & Trainings", value: "4" },
   { icon: GraduationCap, label: "BS CS — Expected", value: "2027" },
 ];
 
@@ -31,7 +31,7 @@ const About = memo(() => (
       >
         <p className="text-xs sm:text-sm tracking-[0.3em] uppercase text-neon-emerald mb-3 font-body">About Me</p>
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold neon-text shimmer-text">
-          AI Engineer · 2 Years in AI · RAG &amp; Agentic AI
+          AI Engineer · Founder, InnoVex · RAG &amp; Agentic AI
         </h2>
       </motion.div>
 
@@ -68,18 +68,18 @@ const About = memo(() => (
           className="text-muted-foreground text-sm sm:text-base md:text-lg leading-relaxed space-y-4"
         >
           <p>
-            I'm <span className="text-foreground font-semibold">Hafiz Adil</span>, an AI Engineer based in Lahore, Pakistan, with two years of hands-on experience building
-            practical applications with Python, RAG, LangChain, LangGraph and modern AI APIs — for clients in Dubai and worldwide.
+            I'm <span className="text-foreground font-semibold">Hafiz Adil</span>, an AI Engineer from Lahore, Pakistan. I run{" "}
+            <span className="text-foreground font-semibold">InnoVex</span>, where I build practical AI products — AI agents, business
+            websites and automation — with Python, RAG, LangChain, LangGraph and Next.js, for small businesses in Lahore, Dubai and worldwide.
           </p>
           <p>
-            Through internships, structured training and hands-on projects, I've developed experience with document Q&amp;A systems, agentic
-            workflows, MCP-based tooling for AI agents, and multimodal AI applications that combine voice, image and text input.
+            Through internships at Decode Labs and HopeToSkill, structured training and 18 hands-on projects, I've built document Q&amp;A
+            systems, agentic workflows, AI voice receptionists and WhatsApp agents — and shipped live sites, including a Next.js storefront
+            for EverShine and a scroll-cinematic villa website.
           </p>
           <p>
-            I'm currently developing my skills and looking for opportunities where I can{" "}
-            <span className="text-neon-emerald">contribute</span>, learn from{" "}
-            <span className="text-neon-emerald">experienced engineers</span>, and grow into a strong{" "}
-            <span className="text-neon-emerald">production-focused AI Engineer</span>.
+            I work with small businesses that need a website, an AI agent, or automation that actually saves time — and I build it end to
+            end, from the first demo to the <span className="text-neon-emerald">live product</span>.
           </p>
         </motion.div>
       </div>

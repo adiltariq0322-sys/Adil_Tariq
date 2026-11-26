@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import portrait from "@/assets/adil-tariq-portrait.webp";
 
 
-const titles = ["RAG Systems", "Agentic AI with LangGraph", "LangChain Pipelines", "Python · FastAPI · Gradio"];
+const titles = ["RAG Systems", "Agentic AI with LangGraph", "AI Voice Receptionists", "Business Websites & Stores", "WhatsApp AI Agents", "Python · FastAPI · Next.js"];
 
 const Hero = memo(() => {
   const [displayText, setDisplayText] = useState("");
@@ -72,7 +72,7 @@ const Hero = memo(() => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.25, duration: 0.65 }}
             >
-              AI Engineer with <span className="text-primary">2 years’ experience</span> building reliable RAG &amp; Agentic AI systems.
+              AI Engineer with <span className="text-primary">2 years’ experience</span> building AI agents, RAG systems &amp; websites for real businesses.
             </motion.h1>
 
             <motion.p
@@ -81,7 +81,7 @@ const Hero = memo(() => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.45, duration: 0.55 }}
             >
-              I build practical AI products with Python, LangChain, LangGraph and FastAPI—turning two years of hands-on AI work into useful retrieval, dependable workflows and clear business outcomes. Based in Lahore, Pakistan, I work with clients in Dubai and worldwide.
+              I run InnoVex, building AI agents, business websites and automation for small businesses — from Lahore to Dubai and worldwide. Python, LangChain, LangGraph, FastAPI and Next.js, turned into products clients actually use.
             </motion.p>
 
             <motion.div
@@ -123,8 +123,8 @@ const Hero = memo(() => {
             >
               {[
                 ["Experience", "2 years in AI"],
-                ["Core stack", "Python · FastAPI"],
-                ["Availability", "Open to opportunities"],
+                ["Core stack", "Python · FastAPI · Next.js"],
+                ["Availability", "Taking on client projects"],
               ].map(([label, value]) => (
                 <div key={label}>
                   <p className="text-xs text-muted-foreground">{label}</p>
@@ -156,7 +156,7 @@ const Hero = memo(() => {
               <p className="text-xs text-muted-foreground">Current status</p>
               <p className="mt-1 flex items-center gap-2 text-xs sm:text-sm font-heading font-medium text-foreground">
                 <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
-                Open to opportunities
+                Taking on new projects
               </p>
             </div>
           </motion.div>
