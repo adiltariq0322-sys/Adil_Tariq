@@ -122,7 +122,7 @@ const Hero = memo(() => {
               transition={{ delay: 0.8, duration: 0.55 }}
             >
               {[
-                ["Projects delivered", "18"],
+                ["Projects delivered", "19"],
                 ["Services", "9"],
                 ["Free demo", "In 2 days"],
               ].map(([label, value]) => (

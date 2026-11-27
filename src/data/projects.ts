@@ -104,6 +104,43 @@ export type Project = {
 // Redeploy trigger 2026-11-25 — forces Vercel to rebuild so the AI Drone Video project goes live.
 export const projects: Project[] = [
   {
+    id: "solstice-estates-luxury-homes-los-angeles",
+    title: "SOLSTICE ESTATES — Luxury Homes, Los Angeles",
+    category: "Web Development",
+    secondaryCategories: ["Generative AI"],
+    tagline: "Scroll-Cinematic Website · AI Video · Real Estate",
+    shortDescription:
+      "A dark, scroll-cinematic luxury real estate website for Los Angeles — the camera flies through 4 AI-generated scenes (Hollywood Hills, Bel Air, interior craft, the residence) as you scroll. Built with the lets-scroll engine.",
+    overview:
+      "A concept luxury real estate website for a fictional Los Angeles brand: scrolling flies the camera through four residences — a Hollywood Hills approach, a Bel Air entry, a crafted interior, and a golden-hour residence finale. All four scenes are AI-generated video dives (1080p on desktop, portrait 720p variants on phones so the effect matches on every mobile), chained into one seamless scroll-driven journey with the lets-scroll engine — scenes crossfade between dives. Dark premium theme: charcoal, ivory and brass.",
+    problemStatement:
+      "A property website with only still photos cannot sell the feeling of arriving at a home. This site makes the scroll itself the tour — the camera glides from the ridge to the front door and through the rooms as the visitor scrolls.",
+    features: [
+      "4 AI-generated video dives chained into one scroll journey",
+      "Scroll-scrubbed camera flights with crossfade transitions",
+      "Portrait mobile video variants — the same effect on every phone",
+      "Dark premium theme — charcoal, ivory and brass",
+      "Scene navigation with dot rail and per-scene copy",
+    ],
+    tech: ["lets-scroll", "Google Flow", "AI Video Generation", "Scroll Animation", "Vercel"],
+    result: "Live scroll-cinematic site — 4 scenes, 1080p desktop + portrait mobile clips",
+    metrics: [
+      { label: "Scenes", value: "4" },
+      { label: "Video dives", value: "4" },
+      { label: "Format", value: "1080p + 720p mobile" },
+    ],
+    keywords: ["real estate", "luxury homes", "los angeles", "scroll cinematic", "flythrough", "lets-scroll", "ai video", "property website", "solstice estates"],
+    icon: Building2,
+    image: "https://solstice-estates-mu.vercel.app/assets/hills.webp",
+    imageAlt: "SOLSTICE ESTATES — modern hillside villa above Los Angeles at golden hour, winding road and downtown skyline",
+    badge: "Web Development · Real Estate",
+    accent: "gold",
+    gradient: "from-neon-gold/25 via-neon-emerald/15 to-transparent",
+    liveDemo: "https://solstice-estates-mu.vercel.app",
+    featured: true,
+    priority: 123,
+  },
+  {
     id: "evershine-cleaning-products-store",
     title: "EverShine — Cleaning Products Store",
     category: "Web Development",

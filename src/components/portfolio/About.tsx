@@ -4,9 +4,9 @@ import { Bot, Layers, Globe, Zap } from "lucide-react";
 import portrait from "@/assets/adil-tariq-portrait.webp";
 
 const highlights = [
-  { icon: Bot, label: "Projects Delivered", value: "18" },
+  { icon: Bot, label: "Projects Delivered", value: "19" },
   { icon: Layers, label: "Services", value: "9" },
-  { icon: Globe, label: "Live Websites", value: "3" },
+  { icon: Globe, label: "Live Websites", value: "4" },
   { icon: Zap, label: "Free Demo", value: "2 Days" },
 ];
 

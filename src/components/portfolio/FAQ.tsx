@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "What projects has InnoVex built?",
-    a: "18 projects are listed on the site, including AdilGPT, an AI skin specialist, an AI customer support agent, and websites for EverShine, Azeem Inspiration Institute, NICE Fast Food & Broast, Aurelle Restaurant and Marbrook Estates.",
+    a: "19 projects are listed on the site, including AdilGPT, an AI skin specialist, an AI customer support agent, and websites for SOLSTICE ESTATES, EverShine, Azeem Inspiration Institute, NICE Fast Food & Broast, Aurelle Restaurant and Marbrook Estates.",
   },
   {
     q: "How can I contact InnoVex?",
