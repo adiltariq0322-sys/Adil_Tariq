@@ -11,6 +11,7 @@ import geminiTasksMd from "../content/blog/gemini-tasks-ai-calling-your-business
 import smbAiMd from "../content/blog/two-thirds-of-small-businesses-now-use-ai.md?raw";
 import shoppingAgentsMd from "../content/blog/ai-shopping-agents-checkout.md?raw";
 import brandSearchMd from "../content/blog/google-ai-answers-your-brand-search.md?raw";
+import chatgptAdsMd from "../content/blog/chatgpt-ads-go-global-early-roi-warning.md?raw";
 
 export type BlogPost = {
   slug: string;
@@ -132,6 +133,17 @@ export const blogPosts: BlogPost[] = [
     imageWidth: 2048,
     imageHeight: 1152,
     content: stripFrontmatter(brandSearchMd),
+  },
+  {
+    slug: "chatgpt-ads-go-global-early-roi-warning",
+    title: "ChatGPT Ads just went global — but the early numbers say test before you spend",
+    excerpt:
+      "OpenAI's November 25 update opened ChatGPT Business Agents to markets outside the US and added proper audience metrics — the same week early data showed most advertisers struggling to break even. Here is what a small business should actually do.",
+    date: "2026-11-28",
+    image: "/images/blog/chatgpt-ads-go-global-early-roi-warning.webp",
+    imageWidth: 2048,
+    imageHeight: 1152,
+    content: stripFrontmatter(chatgptAdsMd),
   },
 ];
 
